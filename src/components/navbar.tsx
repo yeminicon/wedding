@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 const Navbar = () => {
   return (
     <div className="w-full shadow-lg sticky bg-white top-0 z-10 ">
-    <div className="w-[95%] sticky top-0 px-5 h-[70px] shadow-sm max-w-[400px] mx-auto md:max-w-[1200px] bg-white ">
+    <div className="w-[100%]  sticky top-0 px-5 h-[70px] shadow-sm max-w-[400px] mx-auto md:max-w-[1200px] bg-white ">
       <div className="w-full flex flex-row justify-between h-[80px]  items-center">
         <div className="flex flex-row">
           <div>

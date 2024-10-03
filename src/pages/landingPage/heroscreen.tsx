@@ -14,17 +14,17 @@ const HomeScreen = () => {
 
           <div className="flex flex-row mt-5">
             <div className="mr-3">
-              <div className="w-14 h-14 bg-red-400 rounded-full">
+              <div className="w-14 h-14  rounded-full">
                 <Image
                   sizes="cover"
-                  className="w-14 h-14 bg-red-400 rounded-full z-[-100]"
+                  className="w-14 h-14 rounded-full z-[-100]"
                   src="https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-1/438059812_447009597713499_8430484131108912418_n.jpg?stp=dst-jpg_s200x200&_nc_cat=1&ccb=1-7&_nc_sid=50d2ac&_nc_eui2=AeH-XEGhTG05FUtpBnQrrsVTc62arYBNh9dzrZqtgE2H11LhLrDMekbsoWv0bQYLSdcLw8hz3crkezKsGbrK3wex&_nc_ohc=8iG2uWZG-8oQ7kNvgGdXlbg&_nc_ht=scontent.flos5-1.fna&_nc_gid=AZB8jmxaAZCI5TLz3nW-z22&oh=00_AYCD5IsZINjciGZ2zLT0_3-q9-Av0aiPJfqBvPAqzvYZuQ&oe=670413EC"
                 />
               </div>
               <div className="w-14 h-14 mt-[-35px] rounded-full">
               <Image
                   sizes="cover"
-                  className="w-14 h-14 bg-red-400 rounded-full z-[-100]"
+                  className="w-14 h-14  rounded-full z-[-100]"
                   src="https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-1/438059812_447009597713499_8430484131108912418_n.jpg?stp=dst-jpg_s200x200&_nc_cat=1&ccb=1-7&_nc_sid=50d2ac&_nc_eui2=AeH-XEGhTG05FUtpBnQrrsVTc62arYBNh9dzrZqtgE2H11LhLrDMekbsoWv0bQYLSdcLw8hz3crkezKsGbrK3wex&_nc_ohc=8iG2uWZG-8oQ7kNvgGdXlbg&_nc_ht=scontent.flos5-1.fna&_nc_gid=AZB8jmxaAZCI5TLz3nW-z22&oh=00_AYCD5IsZINjciGZ2zLT0_3-q9-Av0aiPJfqBvPAqzvYZuQ&oe=670413EC"
                 />
               </div>
