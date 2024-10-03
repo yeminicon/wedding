@@ -1,12 +1,10 @@
 import { Avatar } from "@nextui-org/react";
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-type Props = {};
 
-const Testimonial = (props: Props) => {
+const Testimonial = () => {
   const listComment = [
     {
       name: "Akinyele Adeyemi",

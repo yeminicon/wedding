@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const BannerNote = (props: Props) => {
+const BannerNote = () => {
   return (
     <div>BannerNote</div>
   )

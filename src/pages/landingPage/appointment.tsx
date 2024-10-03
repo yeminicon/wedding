@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade } from "swiper/modules";
 import SwiperCore from "swiper";
-import React, { useState } from "react";
+import  { useState } from "react";
 
 import "swiper/css";
 import "swiper/css/navigation";
