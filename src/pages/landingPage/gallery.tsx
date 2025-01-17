@@ -1,6 +1,4 @@
-import React from "react";
 
-// Import your images
 import img1 from "../../assets/images/introx-removebg-preview.png";
 import img2 from "../../assets/images/intro11.jpg";
 import img3 from "../../assets/images/intro12.jpg";

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import brideImage from "../../assets/images/intro8.jpg";
 import groomImage from "../../assets/images/intro6.jpg";

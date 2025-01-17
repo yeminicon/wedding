@@ -1,4 +1,3 @@
-import React from "react";
 import { FaClock, FaMapPin, FaPhone } from "react-icons/fa";
 // Tailwind Heroicons (for icons)
 

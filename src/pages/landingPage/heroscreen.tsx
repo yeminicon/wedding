@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Image } from "@nextui-org/react";
 import hybridlash from "../../assets/images/White Emerald Floral.png";
-import FlowerBackground from "../../components/flowerbg";
-
 const HomeScreen = () => {
   // State to hold the remaining time
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -34,7 +32,6 @@ const HomeScreen = () => {
 
   return (
     <div className="w-[100%] h-auto px-1 max-w-[100%] mx-auto md:max-w-[1200px]">
-      <FlowerBackground>
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Text Section */}
           <div className="md:mx-0 md:w-[50%]">
@@ -79,7 +76,6 @@ const HomeScreen = () => {
             />
           </div>
         </div>
-      </FlowerBackground>
     </div>
   );
 };
