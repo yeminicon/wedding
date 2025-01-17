@@ -1,54 +1,68 @@
-import React from "react";
-import { FaWallet } from "react-icons/fa";
+import first from "../../assets/images/intro00-removebg-preview.png";
+import dateImg from "../../assets/images/intro0-removebg-preview.png";
+import yes from "../../assets/images/yesImagNew.jpg";
+import { Button } from "@nextui-org/react";
+import backgroundimage  from"../../assets/images/pen-and-ink-flower-drawings-17.jpg"
 
 const Service = () => {
-  return (
-    <div className="w-[95%] md:max-w-[1200px] my-10 bg-blue-900 flex md:flex-row flex-col rounded-lg md:p-20 p-10 mx-auto">
-   
-      <Section title="Why Choose Lashnectics for Your Beauty Solutions">
-        <Feature
-          title="Exquisite Environment"
-          description="Step into our luxurious sanctuary, where elegance meets comfort. At Lashnectics, we’ve designed every detail to ensure you indulge in an ambiance that rejuvenates your spirit. Bask in the soothing colors, plush seating, and a serene atmosphere that whispers relaxation."
-        />
-        <Feature
-          title="Expert Touch"
-          description="Our team of seasoned beauty professionals is dedicated to crafting an extraordinary experience for you. With years of expertise, we combine skill with a passion for beauty, ensuring that every treatment is not just a service but an art form. Let us pamper you with precision and care!"
-        />
-      </Section>
+  const FirstTime = [
+    {
+      title: "First Time We Meet",
+      img: first,
+      date: "19 Jan 2018",
+      note: "We first met during a study session with friends back in 2016. What started as a casual interaction blossomed into a connection filled with laughter, shared dreams, and unforgettable moments.",
+    },
+    {
+      title: "Our First Date",
+      img: dateImg,
+      date: "22 May 2017",
+      note: "Our first date was nothing short of magical. From the moment we sat down, every conversation felt like a page turning in a beautiful story. We laughed, shared our dreams, and realized how perfectly we fit together. It was the beginning of a journey filled with love and endless possibilities.",
+    },
+    {
+      title: "She Said Yes!",
+      img: yes,
+      date: "19 June 2024",
+      note: "On this unforgettable day, under a sky full of hope and love, she said the words that changed our lives forever—'Yes!' It was a moment filled with overwhelming joy, happy tears, and a promise of a lifetime together. The beginning of forever has never felt so perfect.",
+    }
+  ];
 
-      {/* Salon with an Extra Touch */}
-      <Section title="Lashnetic beauty Salon with an Extra Touch options">
-        <Feature
-          title="Luxurious Massage Options"
-          description="Indulge in a variety of massage therapies designed to melt away your stress. From calming Swedish techniques to invigorating deep tissue treatments, each massage is tailored to meet your needs, ensuring you leave feeling refreshed, relaxed, and radiant."
-        />
-        <Feature
-          title="Exclusive Salon Services"
-          description="Experience our salon services that go beyond the ordinary. Whether you're looking for a stunning new haircut, vibrant color, or a perfect manicure, our talented stylists are here to transform your vision into reality. Enjoy a glass of bubbly while you relax and let us work our magic!"
-        />
-      </Section>
+  return (
+    <div className="w-[100%] md:max-w-[1000px] my-10 rounded-lg md:p-20 p-10 mx-auto">
+      <h1 className="text-center font-bold text-[1.5rem] text-pink-600 md:text-[3rem]">Our Sweet Story</h1>
+
+      <div className="mb-10">
+        {FirstTime.map((time, index) => (
+          <div
+            key={index}
+            className={`flex my-10 h-[100%] ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            } flex-col`}
+          >
+            {/* Image Section */}
+            <div className="md:w-[380px] max-h-[500px] h-[100%] overflow-hidden">
+              <img src={time.img} alt={time.title} />
+            </div>
+
+            {/* Text Section */}
+            <div className="md:w-[400px] my-auto border-4 p-5 md:ml-[-70px] bg-white h-[200px]">
+              <h1>{time.title}</h1>
+              <p>{time.date}</p>
+              <hr />
+              <p>{time.note.slice(0,120)}...</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Footer Section */}
+      <div style={{
+         backgroundImage: `url(${backgroundimage})`,
+      }} className="w-full text-center bg-gray-100 p-10 rounded-lg">
+        <h1 className="text-2xl text-pink-600 font-bold mb-4">Come and Celebrate our Love</h1>
+        <Button variant="bordered" className=" bg-pink-600">Save the Date</Button>
+      </div>
     </div>
   );
 };
-
-// Section component to encapsulate each section's title and features
-const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
-  <div>
-    <h1 className="text-white text-[1.25rem] w-[100%] md:w-[90%] font-bold mb-4">{title}</h1>
-    <ul className="list-disc pl-5 text-white  w-[100%] md:w-[90%]">{children}</ul>
-  </div>
-);
-
-const Feature = ({ title, description }: { title: string; description: string }) => (
-  <li className="mb-4">
-    <div>
-      <div className="w-16 h-16 m-2 rounded-full bg-blue-500 flex justify-center items-center">
-        <FaWallet />
-      </div>
-      <h2 className="text-[1rem] font-semibold ">{title}</h2>
-      <p className="text-gray-200 text-[0.75rem] ">{description}</p>
-    </div>
-  </li>
-);
 
 export default Service;
