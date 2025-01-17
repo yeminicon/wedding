@@ -29,7 +29,7 @@ const GiftAndSponsor = () => {
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-pink-600 mb-4">Send Gift Through</h2>
         <ul className="list-disc list-inside text-gray-700">
-          <li>
+          {/* <li>
             <strong>Cash App:</strong> $AkinyeleAdeyemi
           </li>
           <li>
@@ -45,14 +45,14 @@ const GiftAndSponsor = () => {
           </li>
           <li>
             <strong>Zelle:</strong> akinyele@example.com
-          </li>
+          </li> */}
           <li>
             <strong>Physical Gifts:</strong> Please contact us at{" "}
             <a
               href="mailto:weddingplanner@example.com"
               className="text-pink-500 underline"
             >
-              weddingplanner@example.com
+              08144616094
             </a>{" "}
             for delivery details.
           </li>
